@@ -1,1 +1,30 @@
 <p>product works!</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>
+        Quantity
+      </th>
+      <th>
+        Name
+      </th>
+      <th>
+        Type
+      </th>
+      <th>
+        Price
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let product of productList">
+      <td> {{ product.quantity }} </td>
+      <td> {{ product.name }}</td>
+      <td> {{ product.type }}</td>
+      <td> {{ product.price }}</td>
+    <tr>
+  </tbody>
+
+</table>
