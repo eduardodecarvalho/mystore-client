@@ -19,7 +19,7 @@
   </thead>
 
   <tbody>
-    <tr *ngFor="let product of productList">
+    <tr *ngFor="let product of productList$ | async; index as i">
       <td> {{ product.quantity }} </td>
       <td> {{ product.name }}</td>
       <td> {{ product.type }}</td>

@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "quantity": 10,
+      "name": "Laptop",
+      "type": "IT",
+      "price": 1000
+    },
+    {
+      "quantity": 20,
+      "name": "Smartphone",
+      "type": "Electronics",
+      "price": 700
+    },
+    {
+      "quantity": 15,
+      "name": "Printer",
+      "type": "Office",
+      "price": 150
+    }
+  ]
+}
