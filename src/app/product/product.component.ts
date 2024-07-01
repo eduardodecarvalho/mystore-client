@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AsyncPipe, NgFor } from '@angular/common';
+import { AsyncPipe, CurrencyPipe, NgFor } from '@angular/common';
 import { ProductService } from './product.service';
 import { Product } from './product';
 import { Observable } from 'rxjs';
@@ -15,7 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-product',
   standalone: true,
   imports: [NgFor, AsyncPipe, MatTableModule, FormsModule, MatFormField, MatInputModule,
-    MatButtonModule, MatDividerModule, MatIconModule, ReactiveFormsModule],
+    MatButtonModule, MatDividerModule, MatIconModule, ReactiveFormsModule, CurrencyPipe],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
