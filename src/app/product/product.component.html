@@ -3,6 +3,12 @@
 <form [formGroup]="form" class="product-form">
   <td>
     <mat-form-field>
+      <mat-label>Quantity</mat-label>
+      <input matInput formControlName="quantity" type="number" placeholder="Quantity">
+    </mat-form-field>
+  <td>
+  <td>
+    <mat-form-field>
       <mat-label>Name</mat-label>
       <input matInput formControlName="name" placeholder="Name">
     </mat-form-field>

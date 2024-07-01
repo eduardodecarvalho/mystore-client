@@ -26,7 +26,8 @@ export class ProductComponent implements OnInit {
   form: FormGroup = new FormGroup({
     name: new FormControl(''),
     type: new FormControl(''),
-    price: new FormControl('')
+    price: new FormControl(''),
+    quantity: new FormControl('')
 
   })
   productList$!: Observable<Product[]>
