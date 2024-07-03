@@ -31,13 +31,23 @@ export class ProductComponent implements OnInit {
 
   })
   productList$!: Observable<Product[]>
-  displayedColumns: string[] = ['quantity', 'name', 'type', 'price']
+  displayedColumns: string[] = ['quantity', 'name', 'type', 'price', 'actions']
   constructor(private productService: ProductService) { }
   ngOnInit(): void {
     this.productList$ = this.productService.getProducts()
   }
   saveProduct(product: Product) {
     this.productService.saveProduct(product).subscribe(() => {
+      this.productList$ = this.productService.getProducts()
+    })
+  }
+  deleteProduct(id: string) {
+    this.productService.deleteProduct(id).subscribe(() => {
+      this.productList$ = this.productService.getProducts()
+    })
+  }
+  editProduct(product: Product) {
+    this.productService.editProduct(product).subscribe(() => {
       this.productList$ = this.productService.getProducts()
     })
   }

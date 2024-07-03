@@ -8,7 +8,7 @@ import { Product } from './product';
 })
 export class ProductService {
 
-  baseURL: string = "http://localhost:3000/products"
+  baseURL: string = "http://localhost:3000/products/"
 
   constructor(private http: HttpClient) { }
   getProducts(): Observable<Product[]> {
@@ -16,5 +16,11 @@ export class ProductService {
   }
   saveProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(this.baseURL, product)
+  }
+  deleteProduct(id: string): Observable<Product> {
+    return this.http.delete<Product>(this.baseURL + id)
+  }
+  editProduct(product: Product): Observable<Product> {
+    return this.http.put<Product>(this.baseURL + product.id, product)
   }
 }
