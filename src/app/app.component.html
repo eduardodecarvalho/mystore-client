@@ -1,9 +1,9 @@
 <mat-toolbar>
   <mat-toolbar-row>
-    <a mat-button routerLink="/">My store</a>
+    <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">My store</a>
     <span class="spacer"></span>
-    <a mat-button routerLink="/products">Products</a>
-    <a mat-button routerLink="/clients">Clients</a>
+    <a mat-button routerLink="/products" routerLinkActive="active-link">Products</a>
+    <a mat-button routerLink="/clients" routerLinkActive="active-link">Clients</a>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>

@@ -1,0 +1,45 @@
+.product-form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.full-width {
+  flex: 1;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-row button {
+  margin-top: -0.75rem; /* Hacky way, but hey it works */
+}
+
+
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .full-width {
+    width: 90%;
+  }
+
+  .button-row {
+    justify-content: center;
+    width: 90%;
+  }
+
+}
