@@ -29,29 +29,29 @@
     </section>
 </form>
 
-<table mat-table [dataSource]="productList$" class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <ng-container matColumnDef="quantity">
-    <th mat-header-cell *matHeaderCellDef> Qnt </th>
-    <td mat-cell *matCellDef="let product"> {{ product.quantity }} </td>
+    <th mat-header-cell *matHeaderCellDef> Quantity</th>
+    <td mat-cell *matCellDef="let product"> {{product.quantity}} </td>
   </ng-container>
 
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let product"> {{ product.name }} </td>
+    <th mat-header-cell *matHeaderCellDef> Name</th>
+    <td mat-cell *matCellDef="let product"> {{product.name}} </td>
   </ng-container>
 
   <ng-container matColumnDef="type">
-    <th mat-header-cell *matHeaderCellDef> Type </th>
-    <td mat-cell *matCellDef="let product"> {{ product.type }} </td>
+    <th mat-header-cell *matHeaderCellDef> Type</th>
+    <td mat-cell *matCellDef="let product"> {{product.type}} </td>
   </ng-container>
 
   <ng-container matColumnDef="price">
-    <th mat-header-cell *matHeaderCellDef> Price </th>
-    <td mat-cell *matCellDef="let product"> {{ product.price | currency:'EUR' }} </td>
+    <th mat-header-cell *matHeaderCellDef> Price</th>
+    <td mat-cell *matCellDef="let product"> {{product.price | currency:'EUR'}} </td>
   </ng-container>
 
   <ng-container matColumnDef="actions">
-    <th mat-header-cell *matHeaderCellDef> Actions </th>
+    <th mat-header-cell *matHeaderCellDef> Actions</th>
     <td mat-cell *matCellDef="let product">
       <button (click)="editProduct(product)">
         <mat-icon>edit</mat-icon>

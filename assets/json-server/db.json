@@ -1,25 +1,11 @@
 {
   "products": [
     {
-      "id": "017e",
-      "name": "USB-C Cable",
-      "type": "Eletronic",
-      "price": 15,
-      "quantity": 5
-    },
-    {
       "id": "ad62",
       "name": "Chair",
       "type": "Furniture",
-      "price": 150,
-      "quantity": 10
-    },
-    {
-      "id": "ba25",
-      "name": "Keyboard",
-      "type": "IT",
-      "price": 35,
-      "quantity": 9
+      "price": "100",
+      "quantity": "14"
     }
   ],
   "clients": [
