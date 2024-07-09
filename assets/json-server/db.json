@@ -1,22 +1,32 @@
 {
   "products": [
     {
-      "quantity": 10,
-      "name": "Laptop",
+      "id": "017e",
+      "name": "USB-C Cable",
+      "type": "Eletronic",
+      "price": 15,
+      "quantity": 5
+    },
+    {
+      "id": "ad62",
+      "name": "Chair",
+      "type": "Furniture",
+      "price": 150,
+      "quantity": 10
+    },
+    {
+      "id": "ba25",
+      "name": "Keyboard",
       "type": "IT",
-      "price": 1000
-    },
+      "price": 35,
+      "quantity": 9
+    }
+  ],
+  "clients": [
     {
-      "quantity": 20,
-      "name": "Smartphone",
-      "type": "Electronics",
-      "price": 700
-    },
-    {
-      "quantity": 15,
-      "name": "Printer",
-      "type": "Office",
-      "price": 150
+      "id": "f3f7",
+      "name": "Cleiton Rasta",
+      "email": "contato@cleitonrasta.com"
     }
   ]
 }

@@ -10,17 +10,17 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-product',
   standalone: true,
   imports: [NgFor, AsyncPipe, MatTableModule, FormsModule, MatFormField, MatInputModule,
-    MatButtonModule, MatDividerModule, MatIconModule, ReactiveFormsModule, CurrencyPipe],
+    MatButtonModule, MatDividerModule, MatIconModule, ReactiveFormsModule, CurrencyPipe,
+    MatDialogActions, MatDialogClose, MatDialogContent, MatDialogTitle],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
-
-
 
 export class ProductComponent implements OnInit {
   form: FormGroup = new FormGroup({
